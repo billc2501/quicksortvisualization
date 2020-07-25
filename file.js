@@ -18,7 +18,7 @@ async function quickSort(ar, start, end){
     let index = await part(ar, start, end);
 
     await Promise.all([
-        quickSort(ar, start, index - 1),
+        quickSort(ar, start, index - 1), //divides array to two halves
         quickSort(ar, index + 1, end)
     ]);
 }
