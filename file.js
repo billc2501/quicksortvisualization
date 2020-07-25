@@ -2,10 +2,10 @@ let i  = 0;
 let w = 10;
 
 function setup() {
-    createCanvas(700, 200);
-    values = new Array(floor(width / w));
+    createCanvas(1000, 700);    //create a canvas for bars
+    values = new Array((width / w));
     for (let i = 0; i < values.length; i ++){
-        values[i] = random(height);
+        values[i] = random(width / 1.5);  //array of height bars
     }
     quickSort(values, 0, values.length - 1);
 }
